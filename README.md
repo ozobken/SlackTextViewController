@@ -1,12 +1,3 @@
-# Deprecation
-
-We are no longer providing support for `SlackTextViewController`. This project satisfied all of our iOS messaging needs in the past and we are proud to have contributed it to the open-source community. Today, in order to delight our users with a solution that is highly tailored and rapidly iterated-upon, we have shifted focus to our internal projects. Unfortunately, this renders us lacking the capacity to support our past projects in addition to our newer, internal projects. This project has been deprecated as a result.
-
-# SlackTextViewController
-
-**IMPORTANT NOTICE: Please update to >= `1.9` to avoid any risk of app rejection.
-More details in [#361](https://github.com/slackhq/SlackTextViewController/issues/361)**
-
 [![License](http://img.shields.io/badge/license-MIT-blue.svg)](http://opensource.org/licenses/MIT)
 [![Pod Version](https://img.shields.io/cocoapods/v/SlackTextViewController.svg)](http://cocoadocs.org/docsets/SlackTextViewController/1.9/)
 [![Carthage compatible](https://img.shields.io/badge/carthage-compatible-F5B369.svg)](https://github.com/Carthage/Carthage)
