@@ -49,15 +49,24 @@
 
 - (void)slk_commonInit
 {
-    self.backgroundColor = [UIColor whiteColor];
-    
+    if (@available(iOS 13.0, *)) {
+        self.backgroundColor = [UIColor systemBackgroundColor];
+    } else {
+        self.backgroundColor = [UIColor whiteColor];
+    }
+
     self.interval = 6.0;
     self.canResignByTouch = NO;
     self.usernames = [NSMutableArray new];
     self.timers = [NSMutableArray new];
     
-    self.textColor = [UIColor grayColor];
-    self.highlightTextColor = [UIColor grayColor];
+    if (@available(iOS 13.0, *)) {
+        self.textColor = [UIColor labelColor];
+        self.highlightTextColor = [UIColor labelColor];
+    } else {
+        self.textColor = [UIColor grayColor];
+        self.highlightTextColor = [UIColor grayColor];
+    }
     self.textFont = [UIFont systemFontOfSize:12.0];
     self.highlightFont = [UIFont boldSystemFontOfSize:12.0];
     self.contentInset = UIEdgeInsetsMake(10.0, 40.0, 10.0, 10.0);

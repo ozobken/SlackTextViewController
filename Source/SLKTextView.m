@@ -517,7 +517,8 @@ SLKPastableMediaType SLKPastableMediaTypeFromNSString(NSString *string)
         pointSize += SLKPointSizeDifferenceForCategory(contentSizeCategory);
     }
     
-    UIFont *dynamicFont = [UIFont fontWithName:fontName size:pointSize];
+    //UIFont *dynamicFont = [UIFont fontWithName:fontName size:pointSize];
+    UIFont *dynamicFont = [UIFont systemFontOfSize:pointSize];   // Ken Hack to fix the wrong typeface bug
     
     [super setFont:dynamicFont];
     
